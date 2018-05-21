@@ -1,0 +1,147 @@
+@import "variables";
+
+.btn, a.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  min-width: 305px;
+  min-height: 60px;
+  padding: 5px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $white;
+  border-radius: 30px;
+  border: 2px solid blue;
+  box-shadow: none;
+  font-family: $century-gothic-bold;
+  font-size: 1.278rem;
+  line-height: 1.2;
+  color: blue;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background: blue;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &:disabled{
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &.checked {
+    background: blue;
+    color: $white;
+
+    &:hover {
+      background: $white;
+      color: blue;
+    }
+  }
+
+  &.dark-blue {
+    background: blue;
+    color: $white;
+
+    &:hover {
+      background: $white;
+      color: blue;
+    }
+
+    &:disabled{
+      &:hover {
+        background: blue;
+        color: $white;
+      }
+    }
+  }
+
+  &.medium-red {
+    background: red;
+    color: $white;
+    border-color: currentColor;
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+      background: $white;
+      color: red;
+      border-color: currentColor;
+    }
+
+    &:disabled{
+      &:hover {
+        background: red;
+        color: $white;
+        border-color: currentColor;
+      }
+    }
+
+    .fyre-ico {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  &.circle {
+    width: 45px;
+    height: 45px;
+    min-width: auto;
+    min-height: auto;
+    padding: 0;
+    line-height: 43px;
+    border-radius: 50%;
+  }
+
+  &.small {
+    min-width: 145px;
+    min-height: 45px;
+    font-size: 0.833rem; //15px
+  }
+
+  &.btn-reserve {
+    font-size: 1.11111rem; //20px
+    line-height: 1.1;
+    height: 47px;
+  }
+}
+
+@media screen and ($laptop){
+  .btn, a.btn {
+    min-width: 220px;
+    min-height: 45px;
+    font-size: 1rem;
+
+    &.small {
+      min-width: 110px;
+      min-height: 30px;
+      padding: 7px 25px;
+    }
+  }
+}
+
+@media screen and ($tablet){
+  .btn,
+  a.btn{
+    &.circle{
+      width: 32px;
+      height: 32px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media screen and ($mobile){
+  .btn, a.btn {
+    &.small {
+      display: block;
+      margin: 0 auto;
+      min-width: 190px;
+      font-size: $font-fix;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "variables";
+@import "fonts";
+
+html,
+body{
+  min-height: 100%;
+  word-break: break-word;
+}
+
+header,
+footer{
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1460px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and ($laptop){
+
+}
+
+@media screen and ($tablet){
+
+}
+
+@media screen and ($mobile){
+  .container {
+    padding: 0 15px;
+  }
+}
+

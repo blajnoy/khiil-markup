@@ -1,0 +1,1000 @@
+/* Century Gothic */
+/* Book Antiqua */
+/* Century Gothic */
+/* Book Antiqua */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  webkit-text-size-adjust: 100%; }
+
+header, nav, aside, section, article, footer {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0 0 15px; }
+
+p a {
+  text-decoration: none; }
+
+img {
+  margin: 0;
+  padding: 0; }
+
+a img {
+  border: 0;
+  display: block; }
+
+nav, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+form {
+  margin: 0;
+  padding: 0; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+
+button, input[type="submit"] {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  text-shadow: none !important; }
+
+input::-webkit-input-placeholder {
+  color: #000000; }
+
+input:-ms-input-placeholder {
+  color: #000000; }
+
+:-moz-placeholder {
+  opacity: 1;
+  color: #000000; }
+
+::-moz-placeholder {
+  opacity: 1;
+  color: #000000; }
+
+/* Century Gothic */
+/* Book Antiqua */
+@font-face {
+  font-family: 'BookAntiqua';
+  src: url("../fonts/BookAntiqua.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua.woff") format("woff"), url("../fonts/BookAntiqua.ttf") format("truetype"), url("../fonts/BookAntiqua.svg#BookAntiqua") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BookAntiqua-Italic';
+  src: url("../fonts/BookAntiqua-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua-Italic.woff") format("woff"), url("../fonts/BookAntiqua-Italic.ttf") format("truetype"), url("../fonts/BookAntiqua-Italic.svg#BookAntiqua-Italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BookAntiqua-Bold';
+  src: url("../fonts/BookAntiqua-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua-Bold.woff") format("woff"), url("../fonts/BookAntiqua-Bold.ttf") format("truetype"), url("../fonts/BookAntiqua-Bold.svg#BookAntiqua-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BookAntiqua-BoldItalic';
+  src: url("../fonts/BookAntiqua-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua-BoldItalic.woff") format("woff"), url("../fonts/BookAntiqua-BoldItalic.ttf") format("truetype"), url("../fonts/BookAntiqua-BoldItalic.svg#BookAntiqua-BoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url("../fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic.ttf") format("truetype"), url("../fonts/CenturyGothic.svg#CenturyGothic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CenturyGothic-Italic';
+  src: url("../fonts/CenturyGothic-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic-Italic.woff") format("woff"), url("../fonts/CenturyGothic-Italic.ttf") format("truetype"), url("../fonts/CenturyGothic-Italic.svg#CenturyGothic-Italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CenturyGothic-Bold';
+  src: url("../fonts/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothic-Bold.ttf") format("truetype"), url("../fonts/CenturyGothic-Bold.svg#CenturyGothic-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CenturyGothic-BoldItalic';
+  src: url("../fonts/CenturyGothic-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic-BoldItalic.woff") format("woff"), url("../fonts/CenturyGothic-BoldItalic.ttf") format("truetype"), url("../fonts/CenturyGothic-BoldItalic.svg#CenturyGothic-BoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-family: "CenturyGothic", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111111; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: normal; }
+
+h1, h2, h5 {
+  font-family: "CenturyGothic-Bold", sans-serif;
+  margin: 0; }
+
+h1 {
+  font-size: 2.4rem; }
+
+h2 {
+  font-size: 2rem; }
+
+.bold {
+  font-family: "CenturyGothic-Bold", sans-serif;
+  font-weight: normal; }
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 14px; }
+  .txt-note {
+    padding-left: 15px; } }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.857rem; }
+  h2 {
+    font-size: 1.7rem; }
+  h5 {
+    font-size: 1.3rem; } }
+
+/* Century Gothic */
+/* Book Antiqua */
+.btn, a.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: auto;
+  min-width: 305px;
+  min-height: 60px;
+  padding: 5px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 30px;
+  border: 2px solid blue;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "CenturyGothic-Bold", sans-serif;
+  font-size: 1.278rem;
+  line-height: 1.2;
+  color: blue;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .btn:hover, a.btn:hover {
+    background: blue;
+    color: #ffffff;
+    text-decoration: none; }
+  .btn:disabled, a.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6; }
+  .btn.checked, a.btn.checked {
+    background: blue;
+    color: #ffffff; }
+    .btn.checked:hover, a.btn.checked:hover {
+      background: #ffffff;
+      color: blue; }
+  .btn.dark-blue, a.btn.dark-blue {
+    background: blue;
+    color: #ffffff; }
+    .btn.dark-blue:hover, a.btn.dark-blue:hover {
+      background: #ffffff;
+      color: blue; }
+    .btn.dark-blue:disabled:hover, a.btn.dark-blue:disabled:hover {
+      background: blue;
+      color: #ffffff; }
+  .btn.medium-red, a.btn.medium-red {
+    background: red;
+    color: #ffffff;
+    border-color: currentColor;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .btn.medium-red:hover, a.btn.medium-red:hover {
+      background: #ffffff;
+      color: red;
+      border-color: currentColor; }
+    .btn.medium-red:disabled:hover, a.btn.medium-red:disabled:hover {
+      background: red;
+      color: #ffffff;
+      border-color: currentColor; }
+    .btn.medium-red .fyre-ico, a.btn.medium-red .fyre-ico {
+      margin: 0 10px 0 0; }
+  .btn.circle, a.btn.circle {
+    width: 45px;
+    height: 45px;
+    min-width: auto;
+    min-height: auto;
+    padding: 0;
+    line-height: 43px;
+    border-radius: 50%; }
+  .btn.small, a.btn.small {
+    min-width: 145px;
+    min-height: 45px;
+    font-size: 0.833rem; }
+  .btn.btn-reserve, a.btn.btn-reserve {
+    font-size: 1.11111rem;
+    line-height: 1.1;
+    height: 47px; }
+
+@media screen and (max-width: 1366px) {
+  .btn, a.btn {
+    min-width: 220px;
+    min-height: 45px;
+    font-size: 1rem; }
+    .btn.small, a.btn.small {
+      min-width: 110px;
+      min-height: 30px;
+      padding: 7px 25px; } }
+
+@media screen and (max-width: 1024px) {
+  .btn.circle,
+  a.btn.circle {
+    width: 32px;
+    height: 32px;
+    line-height: 30px; } }
+
+@media screen and (max-width: 767px) {
+  .btn.small, a.btn.small {
+    display: block;
+    margin: 0 auto;
+    min-width: 190px;
+    font-size: 0.93rem; } }
+
+/* Century Gothic */
+/* Book Antiqua */
+::-ms-clear {
+  display: none; }
+
+input {
+  height: 40px; }
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+  border: none !important;
+  -webkit-text-fill-color: inherit !important;
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s; }
+
+input {
+  width: 100%;
+  font-family: "CenturyGothic", sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #666666;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none; }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+legend {
+  font-size: 1rem;
+  font-family: "CenturyGothic", sans-serif;
+  font-weight: normal;
+  color: #000000; }
+  legend.with-img {
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px; }
+    legend.with-img:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+    legend.with-img.cost:before {
+      background-image: url("../images/svg/money-blue.svg"); }
+    legend.with-img.format:before {
+      background-image: url("../images/svg/arrow-resize-blue.svg"); }
+    legend.with-img.baking:before {
+      background-image: url("../images/svg/dish-blue.svg"); }
+    legend.with-img.extra-toppings:before {
+      background-image: url("../images/svg/plus-blue.svg"); }
+    legend.with-img.sauce:before {
+      background-image: url("../images/svg/sauce-blue.svg"); }
+    legend.with-img.amount:before {
+      background-image: url("../images/svg/list-blue.svg"); }
+
+.field-box {
+  text-align: left;
+  position: relative;
+  width: 100%;
+  margin: 0 0 50px; }
+  .field-box.small {
+    width: calc(100% - 110px);
+    margin: 0; }
+    .field-box.small .cart-title {
+      text-transform: uppercase;
+      font-size: 1rem; }
+    .field-box.small .check-icon-box {
+      position: absolute;
+      bottom: -10px;
+      right: -110px;
+      width: 110px;
+      height: 54px; }
+      .field-box.small .check-icon-box .check {
+        width: 54px;
+        height: 54px;
+        display: block;
+        position: relative;
+        margin: 0 auto; }
+        .field-box.small .check-icon-box .check:before, .field-box.small .check-icon-box .check:after {
+          content: '';
+          display: block;
+          position: absolute; }
+        .field-box.small .check-icon-box .check:before {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background-color: orange; }
+        .field-box.small .check-icon-box .check:after {
+          top: 50%;
+          left: 50%;
+          width: 20px;
+          height: 20px;
+          margin: -10px 0 0 -10px;
+          background-size: contain;
+          background-repeat: no-repeat; }
+    .field-box.small.codepromo .check-icon-box .check:after {
+      background-image: url("../images/svg/check-white.svg"); }
+    .field-box.small.location .check-icon-box .check:after {
+      background-image: url("../images/svg/check-white.svg"); }
+  .field-box.textarea-box:before, .field-box.textarea-box:after {
+    content: none; }
+  .field-box.textarea-box .field-name {
+    top: inherit;
+    bottom: 0;
+    height: 40px; }
+    .field-box.textarea-box .field-name:before, .field-box.textarea-box .field-name:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 18px;
+      height: 18px;
+      z-index: 1;
+      -webkit-transform: translate(0, 0);
+          -ms-transform: translate(0, 0);
+              transform: translate(0, 0);
+      background-size: cover;
+      background-repeat: no-repeat;
+      -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+      transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+      -o-transition: opacity 0.3s ease, transform 0.3s ease;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease; }
+    .field-box.textarea-box .field-name:before {
+      opacity: 1;
+      background-image: url("../images/svg/list-blue.svg"); }
+    .field-box.textarea-box .field-name:after {
+      opacity: 0;
+      background-image: url("../images/svg/list-red.svg"); }
+  .field-box.textarea-box.focus .field-name {
+    -webkit-transform: translate(0, -70px);
+        -ms-transform: translate(0, -70px);
+            transform: translate(0, -70px); }
+    .field-box.textarea-box.focus .field-name:before, .field-box.textarea-box.focus .field-name:after {
+      -webkit-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+              transform: scale(0.8); }
+  .field-box.textarea-box.error textarea {
+    border-bottom-color: #ff0000; }
+  .field-box.textarea-box.error .field-name:before {
+    opacity: 0; }
+  .field-box.textarea-box.error .field-name:after {
+    opacity: 1; }
+  .field-box.checkbox:before, .field-box.checkbox:after {
+    content: none; }
+  .field-box.checkbox.circle {
+    margin-bottom: 25px; }
+    .field-box.checkbox.circle:last-child {
+      margin-bottom: 0; }
+    .field-box.checkbox.circle input[type=radio] + label span,
+    .field-box.checkbox.circle input[type=checkbox] + label span {
+      font-size: 1.111rem; }
+    .field-box.checkbox.circle input[type=radio] + label .check,
+    .field-box.checkbox.circle input[type=checkbox] + label .check {
+      width: 22px;
+      height: 22px;
+      border-color: orange;
+      border-radius: 50%; }
+      .field-box.checkbox.circle input[type=radio] + label .check:after,
+      .field-box.checkbox.circle input[type=checkbox] + label .check:after {
+        margin: -7px 0 0 -7px;
+        width: 14px;
+        height: 14px;
+        background: orange;
+        border-radius: 50%; }
+    .field-box.checkbox.circle input[type=radio] + label .check-txt,
+    .field-box.checkbox.circle input[type=checkbox] + label .check-txt {
+      margin-left: 35px;
+      font-family: "CenturyGothic-Bold", sans-serif;
+      color: #000000;
+      font-size: 1.111rem; }
+  .field-box.focus .field-name {
+    -webkit-transform: translate(0, -65%);
+        -ms-transform: translate(0, -65%);
+            transform: translate(0, -65%);
+    color: blue;
+    font-size: 0.8rem; }
+  .field-box.focus .field-separator {
+    width: 100%; }
+  .field-box.error .field-name {
+    color: #ff0000; }
+  .field-box.error .field-separator {
+    background: #ff0000; }
+  .field-box.error input {
+    border-bottom-color: #ff0000; }
+  .field-box.error .field-error {
+    display: block; }
+  .field-box.error:before {
+    opacity: 0; }
+  .field-box.error:after {
+    opacity: 1; }
+  .field-box input,
+  .field-box textarea,
+  .field-box .field-name {
+    font-family: "CenturyGothic", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #000000;
+    line-height: 40px;
+    padding: 0 0 0 30px;
+    text-align: left; }
+  .field-box textarea {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    line-height: 1.3;
+    height: 70.2px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #666666;
+    resize: none; }
+  .field-box .field-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    letter-spacing: 1.28px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis; }
+  .field-box .field-separator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: blue;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    transition: width 0.3s ease; }
+  .field-box .field-error {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: -17px;
+    color: #ff0000;
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    width: 100%; }
+  .field-box:before, .field-box:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 18px;
+    height: 18px;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  .field-box:before {
+    opacity: 1; }
+  .field-box:after {
+    opacity: 0; }
+  .field-box.person:before {
+    background-image: url("../images/svg/man-blue.svg"); }
+  .field-box.person:after {
+    background-image: url("../images/svg/man-red.svg"); }
+  .field-box.mail:before {
+    background-image: url("../images/svg/email-blue.svg"); }
+  .field-box.mail:after {
+    background-image: url("../images/svg/email-red.svg"); }
+  .field-box.phone:before {
+    background-image: url("../images/svg/phone-blue.svg"); }
+  .field-box.phone:after {
+    background-image: url("../images/svg/phone-red.svg"); }
+  .field-box.password:before {
+    background-image: url("../images/svg/lock-blue.svg"); }
+  .field-box.password:after {
+    background-image: url("../images/svg/lock-red.svg"); }
+  .field-box.codepromo:before {
+    background-image: url("../images/svg/money-blue.svg"); }
+  .field-box.codepromo:after {
+    background-image: url("../images/svg/money-red.svg"); }
+  .field-box.location:before {
+    background-image: url("../images/svg/location-blue.svg"); }
+  .field-box.location:after {
+    background-image: url("../images/svg/location-red.svg"); }
+  .field-box input[type=radio],
+  .field-box input[type=checkbox] {
+    display: none; }
+    .field-box input[type=radio] + label,
+    .field-box input[type=checkbox] + label {
+      cursor: pointer;
+      display: inline-block; }
+      .field-box input[type=radio] + label .check,
+      .field-box input[type=checkbox] + label .check {
+        display: block;
+        float: left;
+        position: relative;
+        width: 14px;
+        height: 14px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: blue;
+        border-radius: 3px;
+        background: transparent;
+        margin: 2px 0 0; }
+        .field-box input[type=radio] + label .check:after,
+        .field-box input[type=checkbox] + label .check:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -4px 0 0 -4px;
+          width: 8px;
+          height: 8px;
+          background: blue;
+          border-radius: 3px;
+          -webkit-transform: scale(0);
+              -ms-transform: scale(0);
+                  transform: scale(0);
+          -webkit-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s; }
+      .field-box input[type=radio] + label .check-txt,
+      .field-box input[type=checkbox] + label .check-txt {
+        display: block;
+        margin-left: 25px;
+        font-family: "CenturyGothic", sans-serif;
+        font-weight: normal;
+        color: #404040;
+        font-size: 0.83333rem;
+        line-height: 1.3; }
+    .field-box input[type=radio]:checked + label .check:after,
+    .field-box input[type=checkbox]:checked + label .check:after {
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
+
+.form-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .form-wrap.col-2 > fieldset,
+  .form-wrap.col-2 > .item-box,
+  .form-wrap.col-2 > .cart-sum {
+    margin-bottom: 50px; }
+  .form-wrap.col-2 > fieldset {
+    width: 48%; }
+    .form-wrap.col-2 > fieldset.full-width {
+      width: 100%; }
+  .form-wrap.col-2 > .item-box {
+    width: 45.3%;
+    width: calc(48% - 25px); }
+  .form-wrap.col-2 > .cart-sum {
+    width: 48%; }
+
+.modal-page:not(.password) .field-box:nth-last-child(2) {
+  margin: 0 0 25px; }
+
+@media screen and (max-width: 1366px) {
+  .form-wrap.col-2 > fieldset,
+  .form-wrap.col-2 > .item-box,
+  .form-wrap.col-2 > .cart-sum {
+    margin-bottom: 30px; }
+  .form-wrap.col-2 > .item-box {
+    width: calc(48% - 15px); }
+  legend.with-img {
+    padding-left: 25px; }
+    legend.with-img::before {
+      width: 16px;
+      height: 16px; }
+  .field-box {
+    margin: 0 0 30px; }
+    .field-box:before, .field-box:after {
+      top: 10px;
+      width: 16px;
+      height: 16px; }
+    .field-box.checkbox.circle {
+      margin-bottom: 15px; }
+      .field-box.checkbox.circle input[type=radio] + label .check,
+      .field-box.checkbox.circle input[type=checkbox] + label .check {
+        margin: -1px 0 0; }
+    .field-box textarea {
+      height: 54.6px; }
+    .field-box.small {
+      width: calc(100% - 90px); }
+      .field-box.small .check-icon-box {
+        right: -90px;
+        width: 90px;
+        height: 46px; }
+        .field-box.small .check-icon-box .check {
+          width: 46px;
+          height: 46px; }
+          .field-box.small .check-icon-box .check:after {
+            width: 18px;
+            height: 18px;
+            margin: -9px 0 0 -9px; }
+    .field-box.textarea-box .field-name {
+      padding-left: 25px; }
+      .field-box.textarea-box .field-name:before, .field-box.textarea-box .field-name:after {
+        top: 12px;
+        width: 16px;
+        height: 16px; }
+    .field-box.textarea-box.focus .field-name {
+      -webkit-transform: translate(0, -54px);
+          -ms-transform: translate(0, -54px);
+              transform: translate(0, -54px); }
+      .field-box.textarea-box.focus .field-name:before, .field-box.textarea-box.focus .field-name:after {
+        -webkit-transform: scale(0.85);
+            -ms-transform: scale(0.85);
+                transform: scale(0.85); }
+    .field-box input[type=radio] + label .check,
+    .field-box input[type=checkbox] + label .check {
+      margin: 1px 0 0; }
+    .field-box input[type=radio] + label .check-txt,
+    .field-box input[type=checkbox] + label .check-txt {
+      font-size: 0.93rem; }
+  .modal-page .field-box:nth-last-child(2) {
+    margin: 0 0 20px; } }
+
+@media screen and (max-width: 1280px) {
+  legend.with-img {
+    margin-bottom: 10px; }
+  .form-wrap.col-2 > fieldset {
+    width: 100%;
+    margin-bottom: 20px; }
+  .form-wrap.col-2 .form-wrap.col-2 > fieldset,
+  .form-wrap.col-2 .form-wrap.col-2 > .item-box,
+  .form-wrap.col-2 .form-wrap.col-2 > .cart-sum {
+    margin-bottom: 30px; }
+  .form-wrap.col-2 .form-wrap.col-2 > .item-box {
+    width: calc(48% - 15px); }
+  .form-wrap.col-2 .fieldset-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .form-wrap.col-2 .fieldset-inner .field-box.checkbox.circle {
+      width: 33.33%;
+      margin-bottom: 5px;
+      padding-right: 5px; }
+      .form-wrap.col-2 .fieldset-inner .field-box.checkbox.circle:last-child {
+        margin-bottom: 5px;
+        padding-right: 0; } }
+
+@media screen and (max-width: 1024px) {
+  .field-box.checkbox.circle input[type=radio] + label .check,
+  .field-box.checkbox.circle input[type=checkbox] + label .check {
+    margin: 0;
+    width: 18px;
+    height: 18px; }
+    .field-box.checkbox.circle input[type=radio] + label .check:after,
+    .field-box.checkbox.circle input[type=checkbox] + label .check:after {
+      margin: -5px 0 0 -5px;
+      width: 10px;
+      height: 10px; }
+  .field-box.checkbox.circle input[type=radio] + label .check-txt,
+  .field-box.checkbox.circle input[type=checkbox] + label .check-txt {
+    margin-left: 25px;
+    font-size: 1rem; } }
+
+@media screen and (max-width: 767px) {
+  input {
+    height: 30px; }
+  .form-group {
+    width: 100%; }
+    .form-group.bg-white {
+      background: #ffffff;
+      padding: 20px 20px 30px;
+      -webkit-box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.66);
+              box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.66);
+      border-bottom-right-radius: 14px;
+      border-top-left-radius: 14px; }
+    .form-group.bg-transparent {
+      margin: -23px 0 0 0; }
+  .field-box:before, .field-box:after {
+    width: 14px;
+    height: 14px;
+    top: 7px; }
+  .field-box input,
+  .field-box .field-name {
+    line-height: 30px;
+    padding: 0 0 0 25px; }
+  .field-box.small {
+    width: calc(100% - 65px); }
+    .field-box.small .check-icon-box {
+      bottom: -5px;
+      right: -65px;
+      width: 65px;
+      height: 42px;
+      text-align: right; }
+      .field-box.small .check-icon-box .check {
+        width: 42px;
+        height: 42px;
+        display: inline-block; }
+  .field-box.textarea-box .field-name {
+    height: 30px; }
+    .field-box.textarea-box .field-name:before, .field-box.textarea-box .field-name:after {
+      top: 7px; }
+  .form-wrap.col-2 > .item-box {
+    margin-bottom: 20px;
+    width: 100%;
+    width: calc(100% - 15px); }
+  .form-wrap.col-2 .cart-sum {
+    width: 100%; } }
+
+/* Century Gothic */
+/* Book Antiqua */
+/* Century Gothic */
+/* Book Antiqua */
+@font-face {
+  font-family: 'BookAntiqua';
+  src: url("../fonts/BookAntiqua.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua.woff") format("woff"), url("../fonts/BookAntiqua.ttf") format("truetype"), url("../fonts/BookAntiqua.svg#BookAntiqua") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BookAntiqua-Italic';
+  src: url("../fonts/BookAntiqua-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua-Italic.woff") format("woff"), url("../fonts/BookAntiqua-Italic.ttf") format("truetype"), url("../fonts/BookAntiqua-Italic.svg#BookAntiqua-Italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BookAntiqua-Bold';
+  src: url("../fonts/BookAntiqua-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua-Bold.woff") format("woff"), url("../fonts/BookAntiqua-Bold.ttf") format("truetype"), url("../fonts/BookAntiqua-Bold.svg#BookAntiqua-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BookAntiqua-BoldItalic';
+  src: url("../fonts/BookAntiqua-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua-BoldItalic.woff") format("woff"), url("../fonts/BookAntiqua-BoldItalic.ttf") format("truetype"), url("../fonts/BookAntiqua-BoldItalic.svg#BookAntiqua-BoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url("../fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic.ttf") format("truetype"), url("../fonts/CenturyGothic.svg#CenturyGothic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CenturyGothic-Italic';
+  src: url("../fonts/CenturyGothic-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic-Italic.woff") format("woff"), url("../fonts/CenturyGothic-Italic.ttf") format("truetype"), url("../fonts/CenturyGothic-Italic.svg#CenturyGothic-Italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CenturyGothic-Bold';
+  src: url("../fonts/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothic-Bold.ttf") format("truetype"), url("../fonts/CenturyGothic-Bold.svg#CenturyGothic-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CenturyGothic-BoldItalic';
+  src: url("../fonts/CenturyGothic-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic-BoldItalic.woff") format("woff"), url("../fonts/CenturyGothic-BoldItalic.ttf") format("truetype"), url("../fonts/CenturyGothic-BoldItalic.svg#CenturyGothic-BoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-family: "CenturyGothic", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111111; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: normal; }
+
+h1, h2, h5 {
+  font-family: "CenturyGothic-Bold", sans-serif;
+  margin: 0; }
+
+h1 {
+  font-size: 2.4rem; }
+
+h2 {
+  font-size: 2rem; }
+
+.bold {
+  font-family: "CenturyGothic-Bold", sans-serif;
+  font-weight: normal; }
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 14px; }
+  .txt-note {
+    padding-left: 15px; } }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.857rem; }
+  h2 {
+    font-size: 1.7rem; }
+  h5 {
+    font-size: 1.3rem; } }
+
+html,
+body {
+  min-height: 100%;
+  word-break: break-word; }
+
+header,
+footer {
+  width: 100%; }
+
+.container {
+  width: 100%;
+  max-width: 1460px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 15px; } }
+
+/* Century Gothic */
+/* Book Antiqua */
+.header {
+  background: #1d7791;
+  padding: 15px 0;
+  color: #ffffff;
+  font-size: 0.92rem; }
+  .header a {
+    color: #ffffff;
+    text-decoration: none; }
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.navbar {
+  margin-left: auto; }
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+  .nav li {
+    padding: 0 20px;
+    position: relative; }
+    .nav li a {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle; }
+    .nav li > a {
+      position: relative;
+      display: inline-block;
+      vertical-align: top; }
+      .nav li > a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        background: #ffffff;
+        height: 1px;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s ease;
+        -o-transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease; }
+      .nav li > a:hover:after {
+        width: 100%;
+        opacity: 1; }
+    .nav li:hover .sub-nav {
+      max-height: 1000px;
+      opacity: 1; }
+  .nav .sub-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    background: #1d7791; }
+
+/* Century Gothic */
+/* Book Antiqua */
+
+/*# sourceMappingURL=styles.css.map */
