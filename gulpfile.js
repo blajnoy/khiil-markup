@@ -15,7 +15,7 @@ gulp.task('scss', function () {
 
 gulp.task('libsCss', function() {
     return gulp.src([
-         './node_modules/slick-carousel/slick/slick.css'
+         './node_modules/fullpage.js/dist/jquery.fullpage.min.css'
     ])
         .pipe(concat('libs.css'))
         .pipe(gulp.dest('css'));
@@ -30,7 +30,9 @@ gulp.task('scripts', function() {
 gulp.task('libsScripts', function() {
     return gulp.src([
         './node_modules/jquery/dist/jquery.js',
-        './node_modules/slick-carousel/slick/slick.min.js'
+        './node_modules/fullpage.js/vendors/scrolloverflow.min.js',
+        './node_modules/fullpage.js/dist/jquery.fullpage.min.js',
+        'js/vendors/*.js'
     ])
         .pipe(concat('libs.js'))
         .pipe(gulp.dest('js'));

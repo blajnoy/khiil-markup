@@ -52,11 +52,3 @@ Dropzone.options.contactForm = {
          });*/
     }
 };
-function fullpageInit() {
-
-}
-
-jQuery(document).ready(function () {
-    fullpageInit();
-});
-
