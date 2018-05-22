@@ -1,7 +1,40 @@
 @import "variables";
 
 .footer {
+  background: rgba($black, .6);
+  border-top: 1px solid #535353;
+  font-size: 0.66rem;
+  color: $grey;
+  padding: 30px 0;
 
+  .container {
+    display: flex;
+    align-items: flex-start;
+    
+  }
+
+  a {
+    color: currentColor;
+  }
+
+  .footer-contacts {
+    padding: 0 65px 0 0;
+
+    span {
+      display: block;
+      padding: 0 0 5px;
+    }
+  }
+
+  .footer-nav {
+    li {
+      padding: 0 0 5px;
+    }
+  }
+
+  .copy {
+    margin: 0 0 0 auto;
+  }
 }
 
 @media screen and ($laptop) {

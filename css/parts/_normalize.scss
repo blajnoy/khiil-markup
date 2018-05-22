@@ -24,14 +24,29 @@ p {
   margin: 0 0 15px;
 }
 
-p a{
-  //color: $black;
-  text-decoration: none;
-}
-
 img {
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  p & {
+    text-decoration: underline;
+    color: currentColor;
+
+    &:hover {
+      text-decoration: none;
+      color: $main-color;
+    }
+  }
 }
 
 a img {
