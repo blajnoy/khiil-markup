@@ -10,7 +10,7 @@ gulp.task('scss', function () {
         .pipe(sass())
         .pipe(autoprefixer('last 5 versions'))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('.'));
 });
 
 gulp.task('libsCss', function() {

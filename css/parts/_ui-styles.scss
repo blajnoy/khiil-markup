@@ -7,8 +7,8 @@ body{
   word-break: break-word;
   background: $white;
 
-  &.hp {
-    background: url("../images/bg-main.jpg") no-repeat fixed 50% 0;
+  &.home {
+    background: url("images/bg-main.jpg") no-repeat fixed 50% 0;
     background-size: cover;
     
     .main-content {
@@ -34,7 +34,7 @@ footer{
   flex-basis: auto;
   display: flex;
 
-  .hp & {
+  .home & {
     padding: 55px 0 50px;
     flex-direction: column;
   }
