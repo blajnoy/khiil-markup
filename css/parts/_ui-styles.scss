@@ -40,6 +40,19 @@ footer{
   }
 }
 
+.fullpage {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .section {
+    flex: 1;
+    width: 100%;
+    flex-basis: auto;
+    display: flex;
+  }
+}
+
 .container {
   width: 100%;
   //max-width: 1460px;

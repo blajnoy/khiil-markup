@@ -46,109 +46,33 @@
 
 .navbar {
     margin-left: auto;
-}
 
-.nav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: inline-flex;
+    .menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-flex;
 
-    li {
-        padding: 0 20px;
-        position: relative;
-
-        a {
+        li {
+            padding: 0 20px;
             position: relative;
-            display: inline-block;
-            vertical-align: top;
 
-            &:after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 0;
-                background: currentColor;
-                height: 1px;
-                opacity: 0;
-                transition: all 0.2s ease-out;
-            }
+            a {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
 
-            &:hover {
                 &:after {
-                    width: 100%;
-                    opacity: 1;
-                }
-            }
-        }
-
-        .sub-nav {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            will-change: transform;
-            padding: 15px;
-            max-height: 0;
-            opacity: 0;
-            overflow: hidden;
-            transition: all .2s ease-out;
-            background: $main-color;
-            text-align: center;
-            font-size: .833rem;
-
-            li {
-                padding: 15px 0;
-
-                a {
-                    white-space: nowrap;
-                    display: inline-block;
-                    vertical-align: top;
-                }
-            }
-        }
-
-        &:last-child {
-            &:hover .sub-nav,
-            .sub-nav {
-                left: auto;
-                transform: none;
-                right: -20px;
-            }
-        }
-
-        &:hover {
-            .sub-nav {
-                max-height: 1000px;
-                opacity: 1;
-                height: auto;
-                padding: 15px;
-                bottom: auto;
-                top: 100%;
-                left: 50%;
-                right: auto;
-                transform: translateX(-50%);
-            }
-        }
-
-        &.active {
-            > a {
-                &:after {
-                    width: 100%;
-                    opacity: 1;
-                }
-            }
-        }
-    }
-
-    > li.active {
-        &:hover {
-            > a {
-                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
                     width: 0;
+                    background: currentColor;
+                    height: 1px;
                     opacity: 0;
+                    transition: all 0.2s ease-out;
                 }
 
                 &:hover {
@@ -158,8 +82,86 @@
                     }
                 }
             }
+
+            .sub-menu {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                will-change: transform;
+                padding: 15px;
+                max-height: 0;
+                opacity: 0;
+                overflow: hidden;
+                transition: all .2s ease-out;
+                background: $main-color;
+                text-align: center;
+                font-size: .833rem;
+
+                li {
+                    padding: 15px 0;
+
+                    a {
+                        white-space: nowrap;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                }
+            }
+
+            &:last-child {
+                &:hover .sub-menu,
+                .sub-menu {
+                    left: auto;
+                    transform: none;
+                    right: -20px;
+                }
+            }
+
+            &:hover {
+                .sub-menu {
+                    max-height: 1000px;
+                    opacity: 1;
+                    height: auto;
+                    padding: 15px;
+                    bottom: auto;
+                    top: 100%;
+                    left: 50%;
+                    right: auto;
+                    transform: translateX(-50%);
+                }
+            }
+
+            &.active {
+                > a {
+                    &:after {
+                        width: 100%;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        > li.active {
+            &:hover {
+                > a {
+                    &:after {
+                        width: 0;
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        &:after {
+                            width: 100%;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
         }
     }
+
+
 }
 
 

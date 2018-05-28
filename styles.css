@@ -527,6 +527,24 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
 
+.fullpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+  .fullpage .section {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
 .container {
   width: 100%;
   padding: 0 45px;
@@ -759,91 +777,90 @@ footer {
 
 .navbar {
   margin-left: auto; }
-
-.nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex; }
-  .nav li {
-    padding: 0 20px;
-    position: relative; }
-    .nav li a {
-      position: relative;
-      display: inline-block;
-      vertical-align: top; }
-      .nav li a:after {
-        content: '';
+  .navbar .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    .navbar .menu li {
+      padding: 0 20px;
+      position: relative; }
+      .navbar .menu li a {
+        position: relative;
+        display: inline-block;
+        vertical-align: top; }
+        .navbar .menu li a:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          width: 0;
+          background: currentColor;
+          height: 1px;
+          opacity: 0;
+          -webkit-transition: all 0.2s ease-out;
+          -o-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out; }
+        .navbar .menu li a:hover:after {
+          width: 100%;
+          opacity: 1; }
+      .navbar .menu li .sub-menu {
         position: absolute;
-        bottom: 0;
+        top: 100%;
         left: 50%;
         -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
                 transform: translateX(-50%);
-        width: 0;
-        background: currentColor;
-        height: 1px;
+        will-change: transform;
+        padding: 15px;
+        max-height: 0;
         opacity: 0;
-        -webkit-transition: all 0.2s ease-out;
-        -o-transition: all 0.2s ease-out;
-        transition: all 0.2s ease-out; }
-      .nav li a:hover:after {
+        overflow: hidden;
+        -webkit-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+        background: #1d7791;
+        text-align: center;
+        font-size: .833rem; }
+        .navbar .menu li .sub-menu li {
+          padding: 15px 0; }
+          .navbar .menu li .sub-menu li a {
+            white-space: nowrap;
+            display: inline-block;
+            vertical-align: top; }
+      .navbar .menu li:last-child:hover .sub-menu,
+      .navbar .menu li:last-child .sub-menu {
+        left: auto;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        right: -20px; }
+      .navbar .menu li:hover .sub-menu {
+        max-height: 1000px;
+        opacity: 1;
+        height: auto;
+        padding: 15px;
+        bottom: auto;
+        top: 100%;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
+      .navbar .menu li.active > a:after {
         width: 100%;
         opacity: 1; }
-    .nav li .sub-nav {
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%);
-      will-change: transform;
-      padding: 15px;
-      max-height: 0;
-      opacity: 0;
-      overflow: hidden;
-      -webkit-transition: all .2s ease-out;
-      -o-transition: all .2s ease-out;
-      transition: all .2s ease-out;
-      background: #1d7791;
-      text-align: center;
-      font-size: .833rem; }
-      .nav li .sub-nav li {
-        padding: 15px 0; }
-        .nav li .sub-nav li a {
-          white-space: nowrap;
-          display: inline-block;
-          vertical-align: top; }
-    .nav li:last-child:hover .sub-nav,
-    .nav li:last-child .sub-nav {
-      left: auto;
-      -webkit-transform: none;
-          -ms-transform: none;
-              transform: none;
-      right: -20px; }
-    .nav li:hover .sub-nav {
-      max-height: 1000px;
-      opacity: 1;
-      height: auto;
-      padding: 15px;
-      bottom: auto;
-      top: 100%;
-      left: 50%;
-      right: auto;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%); }
-    .nav li.active > a:after {
+    .navbar .menu > li.active:hover > a:after {
+      width: 0;
+      opacity: 0; }
+    .navbar .menu > li.active:hover > a:hover:after {
       width: 100%;
       opacity: 1; }
-  .nav > li.active:hover > a:after {
-    width: 0;
-    opacity: 0; }
-  .nav > li.active:hover > a:hover:after {
-    width: 100%;
-    opacity: 1; }
 
 /* Century Gothic */
 /* Book Antiqua */
