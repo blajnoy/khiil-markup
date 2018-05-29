@@ -53,7 +53,7 @@ Dropzone.options.contactForm = {
     }
 };
 function fullpageInit() {
-
+    $('#fullpage').fullpage();
 }
 
 jQuery(document).ready(function () {

@@ -50,6 +50,10 @@ footer{
     width: 100%;
     flex-basis: auto;
     display: flex;
+
+    .fp-tableCell {
+      display: flex;
+    }
   }
 }
 
@@ -83,34 +87,34 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.slogan {
-  font-size: 2.33rem;
-  font-family: $book-antiqua-italic;
-  line-height: 1;
-  text-align: center;
-  margin: 0;
-  
-  a {
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    transition: all 0.2s ease;
+  h1 {
+    font-size: 2.33rem;
+    font-family: $book-antiqua-italic;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
 
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 2px;
-      left: 0;
-      width: 100%;
-      opacity: 1;
-      background: currentColor;
-      height: 1px;
-    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.2s ease;
 
-    &:hover {
-      color: $main-color;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        background: currentColor;
+        height: 1px;
+      }
+
+      &:hover {
+        color: $main-color;
+      }
     }
   }
 }
@@ -144,6 +148,22 @@ footer{
 .ico-arrow {
   height: 0.875rem;
   width: 1.625rem;
+  display: inline-block;
+  vertical-align: middle;
+
+  circle,
+  path {
+    fill: currentColor !important;
+  }
+}
+
+.lnk-next {
+  color: $main-color;
+}
+
+.ico-arrow-down {
+  width: 0.875rem;
+  height: 1.625rem;
   display: inline-block;
   vertical-align: middle;
 

@@ -544,6 +544,10 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    .fullpage .section .fp-tableCell {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
 
 .container {
   width: 100%;
@@ -583,31 +587,30 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-
-.slogan {
-  font-size: 2.33rem;
-  font-family: "BookAntiqua-Italic", sans-serif;
-  line-height: 1;
-  text-align: center;
-  margin: 0; }
-  .slogan a {
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    -webkit-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-    .slogan a:after {
-      content: '';
-      position: absolute;
-      bottom: 2px;
-      left: 0;
-      width: 100%;
-      opacity: 1;
-      background: currentColor;
-      height: 1px; }
-    .slogan a:hover {
-      color: #1d7791; }
+  .slogan-wrapper h1 {
+    font-size: 2.33rem;
+    font-family: "BookAntiqua-Italic", sans-serif;
+    line-height: 1;
+    text-align: center;
+    margin: 0; }
+    .slogan-wrapper h1 a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+      .slogan-wrapper h1 a:after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        background: currentColor;
+        height: 1px; }
+      .slogan-wrapper h1 a:hover {
+        color: #1d7791; }
 
 .features-list-wrapper {
   margin-top: auto; }
@@ -638,6 +641,18 @@ footer {
   vertical-align: middle; }
   .ico-arrow circle,
   .ico-arrow path {
+    fill: currentColor !important; }
+
+.lnk-next {
+  color: #1d7791; }
+
+.ico-arrow-down {
+  width: 0.875rem;
+  height: 1.625rem;
+  display: inline-block;
+  vertical-align: middle; }
+  .ico-arrow-down circle,
+  .ico-arrow-down path {
     fill: currentColor !important; }
 
 .features-list {
