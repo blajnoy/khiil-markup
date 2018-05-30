@@ -186,107 +186,28 @@ h2 {
           align-items: center;
   width: auto;
   height: auto;
-  min-width: 305px;
-  min-height: 60px;
-  padding: 5px 25px;
+  min-width: 200px;
+  min-height: 65px;
+  padding: 5px 15px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
-  background: #ffffff;
-  border-radius: 30px;
-  border: 2px solid blue;
+  background: #1d7791;
+  border: 2px solid #1d7791;
   -webkit-box-shadow: none;
           box-shadow: none;
   font-family: "CenturyGothic-Bold", sans-serif;
-  font-size: 1.278rem;
+  font-size: 1.5rem;
   line-height: 1.2;
-  color: blue;
+  color: #ffffff;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  margin: 0 auto; }
   .btn:hover, a.btn:hover {
-    background: blue;
-    color: #ffffff;
+    background: #ffffff;
+    color: #1d7791;
     text-decoration: none; }
-  .btn:disabled, a.btn:disabled {
-    cursor: not-allowed;
-    opacity: 0.6; }
-  .btn.checked, a.btn.checked {
-    background: blue;
-    color: #ffffff; }
-    .btn.checked:hover, a.btn.checked:hover {
-      background: #ffffff;
-      color: blue; }
-  .btn.dark-blue, a.btn.dark-blue {
-    background: blue;
-    color: #ffffff; }
-    .btn.dark-blue:hover, a.btn.dark-blue:hover {
-      background: #ffffff;
-      color: blue; }
-    .btn.dark-blue:disabled:hover, a.btn.dark-blue:disabled:hover {
-      background: blue;
-      color: #ffffff; }
-  .btn.medium-red, a.btn.medium-red {
-    background: red;
-    color: #ffffff;
-    border-color: currentColor;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .btn.medium-red:hover, a.btn.medium-red:hover {
-      background: #ffffff;
-      color: red;
-      border-color: currentColor; }
-    .btn.medium-red:disabled:hover, a.btn.medium-red:disabled:hover {
-      background: red;
-      color: #ffffff;
-      border-color: currentColor; }
-    .btn.medium-red .fyre-ico, a.btn.medium-red .fyre-ico {
-      margin: 0 10px 0 0; }
-  .btn.circle, a.btn.circle {
-    width: 45px;
-    height: 45px;
-    min-width: auto;
-    min-height: auto;
-    padding: 0;
-    line-height: 43px;
-    border-radius: 50%; }
-  .btn.small, a.btn.small {
-    min-width: 145px;
-    min-height: 45px;
-    font-size: 0.833rem; }
-  .btn.btn-reserve, a.btn.btn-reserve {
-    font-size: 1.11111rem;
-    line-height: 1.1;
-    height: 47px; }
-
-@media screen and (max-width: 1366px) {
-  .btn, a.btn {
-    min-width: 220px;
-    min-height: 45px;
-    font-size: 1rem; }
-    .btn.small, a.btn.small {
-      min-width: 110px;
-      min-height: 30px;
-      padding: 7px 25px; } }
-
-@media screen and (max-width: 1024px) {
-  .btn.circle,
-  a.btn.circle {
-    width: 32px;
-    height: 32px;
-    line-height: 30px; } }
-
-@media screen and (max-width: 767px) {
-  .btn.small, a.btn.small {
-    display: block;
-    margin: 0 auto;
-    min-width: 190px;
-    font-size: 0.93rem; } }
 
 /* Century Gothic */
 /* Book Antiqua */
@@ -484,6 +405,9 @@ h2 {
   h5 {
     font-size: 1.3rem; } }
 
+body {
+  overflow: hidden; }
+
 html,
 body {
   min-height: 100%;
@@ -496,6 +420,11 @@ body {
     html.home .main-content,
     body.home .main-content {
       color: #fff; }
+  html.mobile-disabled-fullpage, html.page-template-contact, html.home,
+  body.mobile-disabled-fullpage,
+  body.page-template-contact,
+  body.home {
+    overflow: visible; }
 
 .wrapper {
   display: -webkit-box;
@@ -527,13 +456,30 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  pointer-events: none; }
+  .mobile-disabled-fullpage .overlay,
+  .fp-enabled .overlay {
+    opacity: 0; }
+
 .fullpage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .fullpage .section {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -547,7 +493,8 @@ footer {
     .fullpage .section .fp-tableCell {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      width: 100%; }
 
 .container {
   width: 100%;
@@ -708,11 +655,13 @@ footer {
 .ttl {
   font-size: 1.1rem;
   display: block;
-  margin: 0 0 35px; }
+  margin: 0 0 35px;
+  text-transform: uppercase; }
 
 .title {
   font-size: 1.5rem;
-  margin: 0 0 30px; }
+  margin: 0 0 30px;
+  text-transform: uppercase; }
 
 .contact-form {
   -webkit-box-flex: 1;
@@ -737,18 +686,74 @@ footer {
   text-align: center;
   width: 250px; }
 
+.btn-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center; }
+
+@media screen and (max-width: 1366px) {
+  .container {
+    padding: 0 20px; } }
+
+@media screen and (max-width: 1024px) {
+  .slogan-wrapper {
+    margin: 0 0 50px; }
+  .header .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
 @media screen and (max-width: 767px) {
   .container {
     padding: 0 15px; }
-  .slogan {
-    margin-bottom: 60px;
+  .slogan-wrapper h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
     line-height: 1.2; }
   .features-list .item {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%; }
     .features-list .item + .item {
-      margin-top: 30px; } }
+      margin-top: 30px; }
+  .fullpage .section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .fullpage .section .aside-img {
+      -webkit-box-ordinal-group: 1;
+          -ms-flex-order: 0;
+              order: 0;
+      -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+              flex: 100%; }
+      .fullpage .section .aside-img img {
+        height: 50vw;
+        position: static; }
+    .fullpage .section .content-col {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+              flex: 100%; }
+  .lnk-next {
+    display: none; }
+  .contact-form {
+    font-size: 1.3rem; }
+    .contact-form input {
+      font-size: 1.3rem;
+      height: 21px;
+      border-bottom-width: 1px; }
+      .contact-form input.input-name {
+        width: 155px; }
+      .contact-form input.input-company-name {
+        width: 150px; }
+      .contact-form input.input-email {
+        width: 125px; }
+      .contact-form input.input-url {
+        width: 110px; }
+    .contact-form textarea {
+      font-size: 1.3rem; } }
 
 /* Century Gothic */
 /* Book Antiqua */
@@ -821,9 +826,6 @@ footer {
           -webkit-transition: all 0.2s ease-out;
           -o-transition: all 0.2s ease-out;
           transition: all 0.2s ease-out; }
-        .navbar .menu li a:hover:after {
-          width: 100%;
-          opacity: 1; }
       .navbar .menu li .sub-menu {
         position: absolute;
         top: 100%;
@@ -848,34 +850,177 @@ footer {
             white-space: nowrap;
             display: inline-block;
             vertical-align: top; }
-      .navbar .menu li:last-child:hover .sub-menu,
-      .navbar .menu li:last-child .sub-menu {
-        left: auto;
-        -webkit-transform: none;
-            -ms-transform: none;
-                transform: none;
-        right: -20px; }
-      .navbar .menu li:hover .sub-menu {
-        max-height: 1000px;
-        opacity: 1;
-        height: auto;
-        padding: 15px;
-        bottom: auto;
-        top: 100%;
-        left: 50%;
-        right: auto;
-        -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%); }
-      .navbar .menu li.active > a:after {
+      .navbar .menu li.active > a:after, .navbar .menu li.current-menu-item.current-menu-ancestor > a:after {
         width: 100%;
         opacity: 1; }
-    .navbar .menu > li.active:hover > a:after {
-      width: 0;
-      opacity: 0; }
-    .navbar .menu > li.active:hover > a:hover:after {
-      width: 100%;
-      opacity: 1; }
+
+.mobile-nav-toggle {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 100;
+  overflow: hidden;
+  margin-left: auto;
+  display: none; }
+  .mobile-nav-toggle span, .mobile-nav-toggle:after, .mobile-nav-toggle:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: background-color .3s, -webkit-transform .3s;
+    transition: background-color .3s, -webkit-transform .3s;
+    -o-transition: transform .3s, background-color .3s;
+    transition: transform .3s, background-color .3s;
+    transition: transform .3s, background-color .3s, -webkit-transform .3s;
+    will-change: transform; }
+  .mobile-nav-toggle:before {
+    top: 12px; }
+  .mobile-nav-toggle:after {
+    top: 28px; }
+  .mobile-nav-toggle.active span {
+    -webkit-transform: translate(-66px, -50%);
+        -ms-transform: translate(-66px, -50%);
+            transform: translate(-66px, -50%); }
+  .mobile-nav-toggle.active:before, .mobile-nav-toggle.active:after {
+    top: 20px;
+    left: 7px;
+    width: 27px;
+    height: 2px;
+    background-color: #ffffff; }
+  .mobile-nav-toggle.active:before {
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg); }
+  .mobile-nav-toggle.active:after {
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg); }
+
+@media screen and (min-width: 768px) {
+  .navbar .menu li a:hover:after {
+    width: 100%;
+    opacity: 1; }
+  .navbar .menu li:last-child:hover .sub-menu,
+  .navbar .menu li:last-child .sub-menu {
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    right: -20px; }
+  .navbar .menu li:hover .sub-menu {
+    max-height: 1000px;
+    opacity: 1;
+    height: auto;
+    padding: 15px;
+    bottom: auto;
+    top: 100%;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .navbar .menu > li.active:hover > a:after {
+    width: 0;
+    opacity: 0; }
+  .navbar .menu > li.active:hover > a:hover:after {
+    width: 100%;
+    opacity: 1; } }
+
+@media screen and (max-width: 1366px) {
+  .header .logo-container .logo-slogan {
+    font-size: 1.25rem; } }
+
+@media screen and (max-width: 767px) {
+  .header .logo-container .custom-logo-link {
+    border: 0; }
+  .logo-slogan {
+    display: none; }
+  .mobile-nav-toggle {
+    display: block; }
+    .mobile-nav-toggle.active {
+      position: fixed;
+      top: 15px;
+      right: 15px; }
+  nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    background: rgba(29, 119, 145, 0.97);
+    text-align: right;
+    -webkit-transform: translateX(100vw);
+        -ms-transform: translateX(100vw);
+            transform: translateX(100vw);
+    will-change: transform;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: transform .5s, opacity .5s;
+    transition: transform .5s, opacity .5s;
+    transition: transform .5s, opacity .5s, -webkit-transform .5s;
+    z-index: 10;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px;
+    font-size: 1.5rem; }
+    nav.navbar .menu {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%; }
+      nav.navbar .menu > li {
+        padding: 0;
+        width: 100%;
+        text-align: center; }
+        nav.navbar .menu > li > a {
+          display: block;
+          padding: 1rem; }
+        nav.navbar .menu > li .sub-menu {
+          position: relative;
+          top: 0;
+          left: 0;
+          right: 0 !important;
+          -webkit-transform: none;
+              -ms-transform: none;
+                  transform: none;
+          font-size: 1.1rem;
+          background: none;
+          display: none; }
+        nav.navbar .menu > li.active .sub-menu {
+          max-height: 9999px;
+          opacity: 1;
+          display: none; }
+    nav.navbar.active {
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+      overflow-y: auto; } }
 
 /* Century Gothic */
 /* Book Antiqua */

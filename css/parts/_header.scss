@@ -74,13 +74,6 @@
                     opacity: 0;
                     transition: all 0.2s ease-out;
                 }
-
-                &:hover {
-                    &:after {
-                        width: 100%;
-                        opacity: 1;
-                    }
-                }
             }
 
             .sub-menu {
@@ -109,30 +102,8 @@
                 }
             }
 
-            &:last-child {
-                &:hover .sub-menu,
-                .sub-menu {
-                    left: auto;
-                    transform: none;
-                    right: -20px;
-                }
-            }
-
-            &:hover {
-                .sub-menu {
-                    max-height: 1000px;
-                    opacity: 1;
-                    height: auto;
-                    padding: 15px;
-                    bottom: auto;
-                    top: 100%;
-                    left: 50%;
-                    right: auto;
-                    transform: translateX(-50%);
-                }
-            }
-
-            &.active {
+            &.active,
+            &.current-menu-item.current-menu-ancestor {
                 > a {
                     &:after {
                         width: 100%;
@@ -141,27 +112,57 @@
                 }
             }
         }
+    }
+}
 
-        > li.active {
-            &:hover {
-                > a {
-                    &:after {
-                        width: 0;
-                        opacity: 0;
-                    }
+.mobile-nav-toggle {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 100;
+    overflow: hidden;
+    margin-left: auto;
+    display: none;
 
-                    &:hover {
-                        &:after {
-                            width: 100%;
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
+    span, &:after, &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 2px;
+        background-color: $white;
+        transform: translate(-50%, -50%);
+        transition: transform .3s, background-color .3s;
+        will-change: transform;
+    }
+    &:before {
+        top: 12px;
+    }
+    &:after {
+        top: 28px;
+    }
+    &.active {
+        span {
+            transform: translate(-66px, -50%);
+        }
+        &:before, &:after {
+            top: 20px;
+            left: 7px;
+            width: 27px;
+            height: 2px;
+            background-color: $white;
+        }
+        &:before {
+            transform: rotate(135deg);
+        }
+        &:after {
+            transform: rotate(-135deg);
         }
     }
-
-
 }
 
 
@@ -169,7 +170,74 @@
 
 }
 
+
+@media screen and ($tablet-p) {
+    .navbar {
+        .menu {
+            li {
+                a {
+                    &:hover {
+                        &:after {
+                            width: 100%;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    &:hover .sub-menu,
+                    .sub-menu {
+                        left: auto;
+                        transform: none;
+                        right: -20px;
+                    }
+                }
+
+                &:hover {
+                    .sub-menu {
+                        max-height: 1000px;
+                        opacity: 1;
+                        height: auto;
+                        padding: 15px;
+                        bottom: auto;
+                        top: 100%;
+                        left: 50%;
+                        right: auto;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+
+            > li.active {
+                    &:hover {
+                            > a {
+                                &:after {
+                                    width: 0;
+                                    opacity: 0;
+                                }
+
+                                &:hover {
+                                    &:after {
+                                        width: 100%;
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                    }
+            }
+        }
+    }
+}
+
+
 @media screen and ($laptop) {
+    .header {
+        .logo-container {
+            .logo-slogan {
+                font-size: 1.25rem;
+            }
+        }
+    }
 
 }
 
@@ -180,5 +248,92 @@
 
 
 @media screen and ($mobile){
+
+    .header {
+        .logo-container {
+            .custom-logo-link {
+                border: 0;
+            }
+        }
+    }
+
+    .logo-slogan {
+        display: none;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+
+        &.active {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+        }
+    }
+
+    nav.navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        max-width: 100%;
+        background: rgba($main-color, 0.97);
+        text-align: right;
+        transform: translateX(100vw);
+        will-change: transform;
+        transition: transform .5s, opacity .5s;
+        z-index: 10;
+
+        align-items: flex-start;
+        padding: 20px;
+        font-size: 1.5rem;
+
+        .menu {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            >li {
+                padding: 0;
+                width: 100%;
+                text-align: center;
+
+                > a {
+                    display: block;
+                    padding: 1rem;
+                }
+
+                .sub-menu {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    right: 0 !important;
+                    transform: none;
+                    font-size: 1.1rem;
+                    background: none;
+                    display: none;
+                }
+
+                &.active {
+                    .sub-menu {
+                        max-height: 9999px;
+                        opacity: 1;
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.active {
+            transform: translateX(0);
+            opacity: 1;
+            overflow-y: auto;
+        }
+    }
+
 
 }
