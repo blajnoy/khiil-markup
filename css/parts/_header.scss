@@ -112,6 +112,9 @@
                 }
             }
         }
+        > li.menu-item-contact {
+            display: none;
+        }
     }
 }
 
@@ -288,8 +291,6 @@
         will-change: transform;
         transition: transform .5s, opacity .5s;
         z-index: 10;
-
-        align-items: flex-start;
         padding: 20px;
         font-size: 1.5rem;
 
@@ -298,7 +299,7 @@
             align-items: center;
             width: 100%;
 
-            >li {
+            > li {
                 padding: 0;
                 width: 100%;
                 text-align: center;
@@ -326,6 +327,10 @@
                         display: none;
                     }
                 }
+                &.menu-item-contact {
+                    display: block;
+                }
+
             }
         }
         &.active {
