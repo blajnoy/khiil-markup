@@ -202,14 +202,11 @@ footer{
 }
 
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 -10px;
-  align-items: flex-start;
+  display: block;
 
   .item {
-    flex: 1;
-    margin: 0 10px;
+    padding: 0 10px;
     color: $white;
 
     .img-h {
@@ -217,11 +214,27 @@ footer{
       position: relative;
       border-bottom: 5px solid $main-color;
       margin: 0 0 5px;
+      transition: all 0.2s ease;
 
       img {
         display: block;
         width: 100%;
         height: auto;
+      }
+
+      .text-h {
+        background: rgba(#000, .6);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        color: $white;
+        font-family: "CenturyGothic-Bold", sans-serif;
+        font-size: 2.5rem;
+        line-height: 1.1;
+        transition: all 0.2s ease;
+        opacity: 0;
       }
     }
 
@@ -231,8 +244,19 @@ footer{
 
       &:hover {
         text-decoration: none;
-        color: $main-color;
+
+        .img-h {
+          border-bottom-color: $white;
+        }
+
+        .text-h {
+          opacity: 1;
+        }
       }
+    }
+
+    .name {
+      text-transform: uppercase;
     }
   }
 }
@@ -308,8 +332,11 @@ footer{
   }
 }
 
+.iScrollIndicator {
+  background: $main-color !important;
+}
+
 .smart-page-loader {
-  background: rgba(#fff, 0.5);
   position: fixed;
   top: 0;
   right: 0;
@@ -435,3 +462,6 @@ footer{
   }
 }
 
+.fp-scroller {
+  display: flex;
+}
