@@ -408,8 +408,7 @@ h2 {
 body {
   overflow: hidden; }
 
-html,
-body {
+html, body {
   min-height: 100%;
   word-break: break-word;
   background: #ffffff; }
@@ -420,7 +419,8 @@ body {
     html.home .main-content,
     body.home .main-content {
       color: #fff; }
-  html.mobile-disabled-fullpage, html.page-template-contact, html.home,
+  html.page-template-default, html.mobile-disabled-fullpage, html.page-template-contact, html.home,
+  body.page-template-default,
   body.mobile-disabled-fullpage,
   body.page-template-contact,
   body.home {
@@ -676,14 +676,14 @@ footer {
   margin: 0 0 30px;
   text-transform: uppercase; }
 
-.contact-form {
+.contact-form, .content-wrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 5vh 5vw;
   font-size: 1.833rem;
   line-height: 1.36; }
-  .contact-form p {
+  .contact-form p, .content-wrapper p {
     margin: 0 0 30px; }
 
 .input-name {
@@ -756,7 +756,9 @@ footer {
     margin: 0 0 50px; }
   .header .container {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap; }
+  .features-list .item .img-h .text-h {
+    display: none; } }
 
 @media screen and (max-width: 767px) {
   .container {
@@ -793,21 +795,21 @@ footer {
               flex: 100%; }
   .lnk-next {
     display: none; }
-  .contact-form {
+  .contact-form, .content-wrapper {
     font-size: 1.3rem; }
-    .contact-form input {
+    .contact-form input, .content-wrapper input {
       font-size: 1.3rem;
       height: 21px;
       border-bottom-width: 1px; }
-      .contact-form input.input-name {
+      .contact-form input.input-name, .content-wrapper input.input-name {
         width: 155px; }
-      .contact-form input.input-company-name {
+      .contact-form input.input-company-name, .content-wrapper input.input-company-name {
         width: 150px; }
-      .contact-form input.input-email {
+      .contact-form input.input-email, .content-wrapper input.input-email {
         width: 125px; }
-      .contact-form input.input-url {
+      .contact-form input.input-url, .content-wrapper input.input-url {
         width: 110px; }
-    .contact-form textarea {
+    .contact-form textarea, .content-wrapper textarea {
       font-size: 1.3rem; } }
 
 .fp-scroller {
@@ -1059,6 +1061,16 @@ footer {
         nav.navbar .menu > li > a {
           display: block;
           padding: 1rem; }
+          nav.navbar .menu > li > a:after {
+            -webkit-transform: none;
+                -ms-transform: none;
+                    transform: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            border: 1px solid currentColor;
+            background: none; }
         nav.navbar .menu > li .sub-menu {
           position: relative;
           top: 0;
@@ -1100,7 +1112,7 @@ footer {
             align-items: flex-start; }
   .footer a {
     color: currentColor; }
-  .footer .footer-nav li {
+  .footer #footer-nav li {
     padding: 0 20px 0 0;
     display: inline-block; }
   .footer .copy {

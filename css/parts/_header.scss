@@ -307,6 +307,16 @@
                 > a {
                     display: block;
                     padding: 1rem;
+
+                    &:after {
+                        transform: none;
+                        top:0;
+                        left: 0;
+                        right: 0;
+                        height: auto;
+                        border: 1px solid currentColor;
+                        background: none;
+                    }
                 }
 
                 .sub-menu {

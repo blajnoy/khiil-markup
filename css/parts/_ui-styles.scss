@@ -20,6 +20,7 @@ body{
     }
   }
 
+  &.page-template-default,
   &.mobile-disabled-fullpage,
   &.page-template-contact,
   &.home {
@@ -368,13 +369,17 @@ footer{
 }
 
 
+.content-wrapper {
+  @extend .contact-form;
+}
+
 @media screen and ($laptop){
   .container {
     padding: 0 20px;
   }
 }
 
-@media screen and ($tablet){
+@media screen and ($tablet) {
   .slogan-wrapper {
     margin: 0 0 50px;
   }
@@ -385,8 +390,16 @@ footer{
       flex-wrap: wrap;
     }
   }
+  .features-list{
+    .item {
+      .img-h {
+        .text-h {
+          display: none;
+        }
+      }
+    }
+  }
 }
-
 @media screen and ($mobile){
   .container {
     padding: 0 15px;
