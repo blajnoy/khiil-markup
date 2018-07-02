@@ -1,11 +1,11 @@
 function slickSliderInit() {
     if($('.features-list').length) {
-        $('.features-list').slick({
+        var featuresSlider = $('.features-list').slick({
             infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             arrows: false,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 5000,
             speed: 800,
             responsive: [
@@ -23,9 +23,12 @@ function slickSliderInit() {
                 }
             ]
         });
+        $('#nextSlide').on('click', function (e) {
+           e.preventDefault();
+            featuresSlider.slick('slickNext');
+        });
     }
 }
-
 
 jQuery(document).ready(function () {
     slickSliderInit();

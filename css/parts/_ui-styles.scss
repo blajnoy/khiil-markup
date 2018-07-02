@@ -239,6 +239,11 @@ footer{
       }
     }
 
+    .name {
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+    }
+
     a {
       color: currentColor;
       transition: all 0.2s ease;
@@ -253,11 +258,11 @@ footer{
         .text-h {
           opacity: 1;
         }
-      }
-    }
 
-    .name {
-      text-transform: uppercase;
+        .name {
+          color: $main-color;
+        }
+      }
     }
   }
 }

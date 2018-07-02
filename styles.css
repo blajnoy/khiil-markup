@@ -635,6 +635,11 @@ footer {
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
         opacity: 0; }
+    .features-list .item .name {
+      text-transform: uppercase;
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
     .features-list .item a {
       color: currentColor;
       -webkit-transition: all 0.2s ease;
@@ -646,8 +651,8 @@ footer {
           border-bottom-color: #ffffff; }
         .features-list .item a:hover .text-h {
           opacity: 1; }
-    .features-list .item .name {
-      text-transform: uppercase; }
+        .features-list .item a:hover .name {
+          color: #1d7791; }
 
 .heading {
   margin: 0 0 30px; }
