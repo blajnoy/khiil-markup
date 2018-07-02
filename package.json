@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "fullpage.js": "^2.9.7",
+    "iscroll": "^5.2.0",
     "npm": "^6.0.1",
     "slick-carousel": "^1.8.1"
   }

@@ -46,7 +46,7 @@ footer{
   display: flex;
 
   .home & {
-    padding: 55px 0 50px;
+    padding: 98px 0 50px;
     flex-direction: column;
   }
 }
@@ -83,6 +83,20 @@ footer{
     .fp-tableCell {
       display: flex;
       width: 100%;
+      position: relative;
+    }
+
+    .section-holder {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+
+      .section-wrapper {
+        display: flex;
+        width: 100%;
+        min-height: 100%;
+        align-items: center;
+      }
     }
   }
 }
@@ -94,14 +108,17 @@ footer{
 }
 
 .content-col {
-  flex: 50%;
+  flex: 0 0 50%;
   box-sizing: border-box;
   padding: 5vh 5vw;
 }
 
 .aside-img {
-  flex: 50%;
-  position: relative;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  top: 0;
 
   img {
     position: absolute;
@@ -386,7 +403,7 @@ footer{
 
 @media screen and ($tablet) {
   .slogan-wrapper {
-    margin: 0 0 50px;
+    margin: 0;
   }
 
   .header {
@@ -406,14 +423,20 @@ footer{
   }
 }
 @media screen and ($mobile){
+  .home {
+    .main-content {
+      padding-bottom: 25px;
+    }
+  }
+
   .container {
     padding: 0 15px;
   }
 
   .slogan-wrapper {
     h1 {
-      margin-bottom: 30px;
-      font-size: 2rem;
+      margin-bottom: 0;
+      font-size: 1.8rem;
       line-height: 1.2;
     }
   }
@@ -430,7 +453,7 @@ footer{
 
   .fullpage {
     .section {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
 
       .aside-img {
         order: 0;
@@ -452,6 +475,7 @@ footer{
   .lnk-next {
     display: none;
   }
+
   .contact-form {
     font-size: 1.3rem;
 

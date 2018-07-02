@@ -34,6 +34,7 @@ gulp.task('libsScripts', function() {
         './node_modules/fullpage.js/dist/jquery.fullpage.min.js',
         './node_modules/fullpage.js/vendors/scrolloverflow.min.js',
         './node_modules/slick-carousel/slick/slick.js',
+        './node_modules/iscroll/build/iscroll.js',
         'js/vendors/*.js'
     ])
         .pipe(concat('libs.js'))

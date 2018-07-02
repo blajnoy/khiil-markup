@@ -42,5 +42,27 @@
 }
 
 @media screen and ($mobile) {
+  .footer {
+    font-size: 0.76rem;
+    padding: 20px 0;
 
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        padding: 0 0 10px;
+      }
+    }
+
+    .copy {
+      margin: 0;
+    }
+  }
 }
