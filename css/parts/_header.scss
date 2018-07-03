@@ -121,6 +121,10 @@
     }
 }
 
+.mobile-logo {
+    display: none;
+}
+
 .mobile-nav-toggle {
     position: relative;
     width: 40px;
@@ -244,6 +248,11 @@
         }
     }
 
+    .info-page {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
 }
 
 
@@ -276,7 +285,7 @@
         }
     }
 
-    .custom-logo-link.mobile-logo {
+    .mobile-logo {
         position: fixed;
         top: 16px;
         left: 15px;
@@ -284,11 +293,14 @@
         z-index: 99;
         transition: all 1s ease;
         will-change: transform;
+        display: block;
 
-        img {
-            height: 2.875rem;
-            width: auto;
-            display: block;
+        .custom-logo-link {
+            img {
+                height: 2.875rem;
+                width: auto;
+                display: block;
+            }
         }
 
         &.active {

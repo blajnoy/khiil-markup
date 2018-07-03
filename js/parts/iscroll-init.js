@@ -2,7 +2,8 @@ function iscrollInit() {
     $('.section-holder').each(function () {
         new IScroll(this, {
             mouseWheel: true,
-            scrollbars: true
+            scrollbars: true,
+            fadeScrollbars: true,
         });
     });
 }
